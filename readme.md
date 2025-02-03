@@ -32,13 +32,25 @@ cd FastAPI-with-Asynchronous-SQLAlchemy
 ```
 
 ## Setup
-1. **Install Dependencies**  
+1. **Create a Virtual Environment**  
+   - **Linux/macOS**:  
+     ```bash
+     python3 -m venv venv
+     source venv/bin/activate
+     ```  
+   - **Windows**:  
+     ```cmd
+     python -m venv venv
+     .\venv\Scripts\activate
+     ```  
+
+2. **Install Dependencies**  
    Install the required Python packages:  
    ```bash
    pip install -r requirements.txt
    ```  
 
-2. **Create the PostgreSQL Database**  
+3. **Create the PostgreSQL Database**  
    Before running the application, ensure the database is created. You can do this using:  
 
    - **Command Line (psql)**:  
@@ -59,7 +71,7 @@ cd FastAPI-with-Asynchronous-SQLAlchemy
      3. Right-click on "Databases" and select "Create > Database".  
      4. Enter the database name (e.g., `fastapi_db`) and click "Save".  
 
-3. **Verify Database Connection**  
+4. **Verify Database Connection**  
    Ensure the database is accessible using:  
 
    - **Command Line (psql)**:  
@@ -78,7 +90,7 @@ cd FastAPI-with-Asynchronous-SQLAlchemy
      2. Expand the "Databases" node and verify the new database appears.  
      3. Open the Query Tool and run a simple query (e.g., `SELECT 1;`) to test the connection.  
 
-4. **Environment Variables**  
+5. **Environment Variables**  
    Create a `.env` file with the following variables to configure your PostgreSQL database connection:  
    ```env
    DB_USER=your_db_user          # PostgreSQL username (e.g., "postgres")
@@ -88,12 +100,12 @@ cd FastAPI-with-Asynchronous-SQLAlchemy
    DB_NAME=your_db_name          # Database name (e.g., "fastapi_db")
    ```
 
-3. **Database Migrations**
+6. **Database Migrations**
    ```bash
    alembic upgrade head
    ```
 
-4. **Run the Application**
+7. **Run the Application**
    ```bash
    uvicorn app.main:app --reload
    ```
