@@ -9,6 +9,13 @@ A modern FastAPI application showcasing seamless integration with Asynchronous S
 - 🛠️ Pydantic for data validation and serialization
 - 🧩 Modular architecture with clear separation of concerns
 
+## Getting Started  
+### Clone the Repository  
+To get started, clone the repository to your local machine:  
+```bash
+git clone https://github.com/Khailas12/FastAPI-with-Asynchronous-SQLAlchemy.git
+cd FastAPI-with-Asynchronous-SQLAlchemy
+```  
 ## Project Structure
 ```
 ├── app/                     # Main application directory
