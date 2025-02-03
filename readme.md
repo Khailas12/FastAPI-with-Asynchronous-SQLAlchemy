@@ -186,7 +186,7 @@ alembic upgrade head
 
 
 ## Contributing
-Contributions are welcome! Please follow these steps:
+I welcome contributions from the open-source community! Whether you're fixing bugs, improving documentation, or adding new features, your help is greatly appreciated.
 1. Fork the repository
 2. Create a new branch (`git checkout -b feature/YourFeatureName`)
 3. Commit your changes (`git commit -m 'Add some feature'`)
